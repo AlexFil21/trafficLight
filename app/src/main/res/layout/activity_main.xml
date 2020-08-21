@@ -1,31 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp">
 
-<LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@android:color/holo_green_dark"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:orientation="horizontal">
-</LinearLayout>
 
-<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@android:color/holo_orange_light"
-        android:orientation="horizontal">
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        </LinearLayout>
 
-<LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/redCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dark_circle"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yellowCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dark_circle"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/greenCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dark_circle"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/colorAccent"
         android:orientation="horizontal">
-</LinearLayout>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeToRed"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeToYellow"
+            android:text="Yellow" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="changeToGreen"
+            android:text="Green" />
+
+    </LinearLayout>
 </LinearLayout>
